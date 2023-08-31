@@ -84,6 +84,7 @@ function ConnectButton({ history, settings, setSetting, getGovernanceStrike }) {
           message.error(
             'You are currently visiting the Goerli Test Network for Strike Finance. Please change your metamask to access the Ethereum Mainnet.'
           );
+
         } else {
           setSetting({
             accountLoading: false
