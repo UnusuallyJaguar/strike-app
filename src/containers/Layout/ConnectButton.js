@@ -84,10 +84,7 @@ function ConnectButton({ history, settings, setSetting, getGovernanceStrike }) {
           message.error(
             'You are currently visiting the Goerli Test Network for Strike Finance. Please change your metamask to access the Ethereum Mainnet.'
           );
-        } else if (netId === 1 && process.env.REACT_APP_ENV === 'prod') {
-          message.error(
-            'You are currently visiting the Main Network for Strike Finance. Please change your metamask to access the Goerli Test Network.'
-          );
+
         } else {
           setSetting({
             accountLoading: false
