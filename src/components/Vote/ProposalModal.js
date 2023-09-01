@@ -227,7 +227,7 @@ function ProposalModal({
             let callDataTypes = [];
             targetAddresses.push(formValues[`targetAddress${i}`]);
             values.push(
-              process.env.REACT_APP_ENV === 'prod' ||
+              process.env.REACT_APP_ENV === 'dev' ||
                 formValues[`value${i}`] === ''
                 ? 0
                 : formValues[`value${i}`]
@@ -410,7 +410,7 @@ function ProposalModal({
                         />
                       )}
                     </Form.Item>
-                    {process.env.REACT_APP_ENV !== 'prod' && (
+                    {process.env.REACT_APP_ENV !== 'dev' && (
                       <Form.Item>
                         {getFieldDecorator(`value${index}`, {
                           rules: [
