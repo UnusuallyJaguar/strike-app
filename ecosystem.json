@@ -16,7 +16,7 @@
         "ref"  : "origin/master",
         "repo" : "https://github.com/StrikeFinance/strike-app.git",
         "path" : "/home/ubuntu/repos/strike-app",
-        "post-deploy" : "npm install && sudonpm run build && cp .htaccess build/.htaccess"
+        "post-deploy" : "npm install && sudo  npm run build && cp .htaccess build/.htaccess"
       }
     }
 }
